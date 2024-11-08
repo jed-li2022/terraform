@@ -11,7 +11,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-22.04-2core-8ram-75ssd
+    runs-on: ubuntu-latest
     environment:
       name: ${{ inputs.target-env }}
 
