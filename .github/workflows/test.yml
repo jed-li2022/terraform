@@ -12,11 +12,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    environment:
-      name: ${{ inputs.target-env }}
+    environment: ${{ inputs.target-env }}
 
     steps:
     - uses: actions/checkout@v2
     - name: test
       run: |
-        echo "${{ env.NAME }}"
+        echo "${{ vars.NAME }}"
